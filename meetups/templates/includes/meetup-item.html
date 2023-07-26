@@ -1,0 +1,17 @@
+{% load static  %}
+
+<div class="card mb-3 p-3 shadow-lg">
+    <div class="row g-0">
+      <div class="col-lg-4">
+        <img src="{{ meetup.image.url }}" alt="{{meetup.title}}" class="img-fluid rounded" />
+      </div>
+      <div class="col-lg-8">
+        <div class="card-body">
+          <h3>{{meetup.title}}</h3>
+          <p>New York</p>
+          <a href="{% url 'meetup-detail' meetup.slug %}" class="btn card-btn">More Details</a>
+        </div>
+      </div>
+    </div>
+</div>
+

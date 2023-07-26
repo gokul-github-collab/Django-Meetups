@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+    background-color: #D7BBF5;
+}
+
+span{
+    color: #6528F7;
+
+}
+h2{
+    line-height: 2;
+}
+.center{
+    margin-top: 200px;
+}
+
+.card-header{
+    padding: 6rem 0;
+    border: 4px solid #6528F7;
+    background-color: #EDE4FF;
+}
+
+.title{
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 800;
+    font-size: 3.5rem;
+    color: #6528F7;
+}

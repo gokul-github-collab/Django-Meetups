@@ -1,0 +1,42 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EDE4FF;
+}
+
+header{
+    padding: 2rem 0 4rem 0;
+    text-align: center;
+}
+
+h1{
+    line-height: 2;
+}
+
+.title{
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 800;
+    font-size: 3.5rem;
+    color: #6528F7;
+}
+
+.card{
+    background-color: #6528F7;
+}
+
+.card-body a{
+    background-color: #A076F9;
+}
+
+.card-body a:hover{
+    background-color: #7540f1;
+}
+
+.card-body h3{
+    color: #fff;
+}
+.card-body p{
+    color: #fff;
+    font-weight: 500;
+
+}

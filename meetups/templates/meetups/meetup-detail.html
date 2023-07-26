@@ -1,0 +1,38 @@
+{% extends 'base.html' %} {% load static %} {% block title %}{{meetup.title}} 
+{% endblock %} {% block css_files %}
+<link rel="stylesheet" href="{% static 'meetups/styles/meetup-detail.css' %}" />
+{% endblock %}
+
+{% block content %}
+<a class="title" href="">DjangoMeetups</a>
+{% if meetup_found %}
+<h2 class="mt-2">{{meetup.title}}</h2>
+<div class="container">
+  <div class="center">
+    <div class="card">
+      <div class="card-header">
+        <div class="card-body">
+          <h2>Meetup Location</h2>
+          <p>
+            This meeting takes place in <span>New York</span> (ADDRESS)
+          </p>
+        </div>
+
+        <div>
+          <h2>What's This Meetup About?</h2>
+          <p>{{meetup.description}}</p>
+        </div>
+
+        <footer>
+          <p>Need more details? Please <span>contact the organizer</span>(but don't spam us :) )</p>
+          <h2>Join Us!</h2>
+          <h5>FORM</h5>
+        </footer>
+      </div>
+    </div>
+  </div>
+</div>
+{% else %}
+<p>NO MEETUP FOUND FOR THIS SLUG, sorry!</p>
+{% endif %}
+{% endblock %}
