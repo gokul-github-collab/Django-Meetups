@@ -8,7 +8,7 @@
       <div class="col-lg-8">
         <div class="card-body">
           <h3>{{meetup.title}}</h3>
-          <p>New York</p>
+          <p>{{meetup.location.name}}</p>
           <a href="{% url 'meetup-detail' meetup.slug %}" class="btn card-btn">More Details</a>
         </div>
       </div>

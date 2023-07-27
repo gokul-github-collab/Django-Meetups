@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+
+{{meetup.title}}
+
+{% endblock %}
+
+{% block css_files %}
+
+{% endblock %}
+
+{% block content %}
+<h1>Thanks for signing up!</h1>
+<section id="confirmation">
+    <h3>You registered successfully</h3>
+    <p>Thanks for signing up -- se you at the meetup</p>
+    <p>Doubts <a href="mailto:{{meetup.organizer_email}}">contact</a></p>
+</section>
+
+<section id="continue">
+    <p>Ofcourse you can sign up for more than one meetup!</p>
+    <p><a href="/meetups">Explore our Meetups</a></p>
+</section>
+{% endblock %}
